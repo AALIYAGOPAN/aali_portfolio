@@ -1,0 +1,379 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    box-sizing: content-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    font-size: 20px;
+}
+.navlist a.active{
+    color: rgb(188, 43, 128);
+}
+.navlist {
+    display: flex;
+    margin-right: -80px;
+}
+.navlist a{
+    
+    color: rgb(238, 13, 145);
+    font-size: 19px;
+    font-weight:800;
+    margin: 25px;
+}
+.navlist .open{
+    top: 100%;
+}
+nav{
+    position: fixed;
+    height: 3.5em;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    background: black;
+    border-bottom: 1px solid transparent;
+    transition: all 045s ease;
+}
+.navlist a:hover{
+    color: #e9f0e9;
+}
+.logo img{
+    height: 60px;
+    margin-left:20px;
+}
+.nam{
+    margin-left: 10px;
+}
+
+section{
+    padding: 1px 8% 2px;
+}
+span{
+    color: #d410d4;
+    
+}
+.container{
+    margin: 21px;
+}
+
+
+
+/*home*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0,0,0,0.5);
+    height: 840px; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("https://wallpapers.com/images/hd/purple-aesthetic-pictures-iw2bh4rzo6dbjz5k.jpg") no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index:-1;
+    opacity:.8 ;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family:century;
+    font: size 3rem; 
+    text-align: center;
+    margin: 40px 0px;
+}
+.bot{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.bot:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white,0 0 15px white ;
+    font-weight: bold;
+}
+
+/*about*/
+
+.about{
+    height: 100vh;
+    width: 100%;
+    background-size:cover ;
+    background-position: centre;
+    display: flex;
+    background-image: url(https://i3.wp.com/wallpapers.com/images/hd/pink-and-black-glitter-aesthetic-buqnv9f1zjqvik6u.jpg?ssl=1);
+    align-items: center;
+    gap: 100px;
+}
+.abt-img img{
+    max: width 100px;
+    height: 400px;
+    width: 100%;
+    border-radius: 410px;
+}
+.abt h1{
+    color: aliceblue;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+.abt h3{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 20;
+}
+.abt p{
+    font-size: 20px;
+    color: #e9f0e9;
+    margin-bottom: 50px;
+}
+
+
+/*service*/
+
+.ser-text{
+    text-align: center;
+}
+.ser-text h1{
+    color: #f2e9e9;
+    font-size: 50px;
+    margin: 10px;
+}
+.ser-text{
+    font-size: 15px;
+    line-height: 1;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px; 
+    border: 1px solid rgb(116, 9, 72);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top,rgb(242, 33, 172) 50%,white 50% );
+    background-size: 10% 200%;
+    transition: all 0.8s; 
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(220, 17, 146);
+}
+.box p{
+    font-size: large;
+    max-width: 2000px;
+    height: 50px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box h1{
+    font-size: 30px;
+    padding-top: 32px;
+}
+.services{
+    height: 100vh;
+    width: 100%;
+    background-size:cover ;
+    background-position: centre;
+    display: flex;
+    background-image:url("https://w0.peakpx.com/wallpaper/410/412/HD-wallpaper-plain-black-black.jpg");
+    align-items: center;
+    gap: 100px;
+}
+
+/*portfolio*/
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 250px;
+    width: 500px;
+}
+.row img{
+    width: 100%;
+    border-radius: 8%;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(226, 7, 179, 0.1),rgb(223, 63, 146));
+    position: absolute;
+    border-radius: 8px;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0 40px;
+    transition:height 0.5s;
+}
+.layer h4{
+    font: 20px;
+    font-weight:600;
+    margin-bottom: 15px;
+}
+.layer p{
+    color: #d410d4;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i{
+    color: aqua;
+    margin: top 20px;
+    font-size: 20px;
+    background: black;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.content{
+    background:white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+/*contact*/
+
+.Contact{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://wallpapers.com/images/hd/pink-black-1920-x-900-background-qh6ozxiwml3psv7k.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 100px;
+}
+.Contact-text h4{
+    color: #e9f0e9;
+    margin: 18px 8;
+    font-size: 20px;
+    font-weight: 600;
+}
+.Contact-text h2{
+    font-size: 80px;
+    line-height: 1;
+    color: rgb(244, 240, 242);
+}
+.Contact-text p{
+    color: #d410d4;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.list{
+    margin-bottom: -2rem;
+}
+.list li{
+    margin-bottom: 2px;
+}
+.list li a{
+    display: block;
+    color: rgb(233, 233, 240);
+    font-size: 20px;
+    transition: all .45s ease;
+}
+.list li a:hover{
+    color:rgb(236, 8, 164);
+    transform: translateY(5px);
+}
+.Contact-icons i{
+    height:45px;
+    width: 45px;
+    color: red;
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.Contact-icons i:hover{
+    color: aqua;
+}
+.Contact form{
+    position: relative;
+}
+.Contact form input,form textarea{
+    width: 100%;
+    padding: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(6, 6, 6);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+.Contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
