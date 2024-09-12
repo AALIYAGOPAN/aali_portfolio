@@ -215,10 +215,10 @@ span{
 .services{
     height: 100vh;
     width: 100%;
-    background-size:cover ;
+    background-size:cover;
     background-position: centre;
-    display: flex;
     background-image:url("https://w0.peakpx.com/wallpaper/410/412/HD-wallpaper-plain-black-black.jpg");
+    display: flex;
     align-items: center;
     gap: 100px;
 }
@@ -227,23 +227,27 @@ span{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
     align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem;
+    gap: 100px; 
+    background-image: url("https://files.123freevectors.com/wp-content/original/166987-abstract-pink-and-black-geometric-square-background.jpg");
+    background-size:cover;
+    background-position: centre;
 }
-.row{
+.row1{
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
     height: 250px;
-    width: 500px;
+    width: 400px;
 }
-.row img{
+
+.row1 img{
     width: 100%;
     border-radius: 8%;
     display: block;
+    object-fit: cover;
     transition: transform 0.5s;
 }
 .layer{
